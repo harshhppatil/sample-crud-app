@@ -1,11 +1,10 @@
 language: php
 
 php:
-  - 7.4
   - 8.0
 
 install:
-  - echo "No dependencies to install yet"
+  - composer install --no-interaction --prefer-dist
 
 before_script:
   - echo "Starting build process"

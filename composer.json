@@ -1,0 +1,9 @@
+{
+  "name": "harshhppatil/sample-crud-app-staging",
+  "description": "Simple MVC CRUD Application",
+  "type": "project",
+  "require": {
+    "php": "^8.0"
+  },
+  "license": "MIT"
+}
