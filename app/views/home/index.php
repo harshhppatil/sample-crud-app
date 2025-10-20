@@ -6,6 +6,8 @@
     <title><?php echo $data['title']; ?></title>
     <!-- Debug: URLROOT = <?php echo URLROOT; ?> -->
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="<?php echo URLROOT; ?>/favicon.svg">
 </head>
 <body>
     <div class="container">
