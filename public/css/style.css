@@ -1,0 +1,79 @@
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* ==========================================
+   LAYOUT
+   ========================================== */
+.container {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ==========================================
+   TYPOGRAPHY
+   ========================================== */
+h1 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   INFO BOX
+   ========================================== */
+.info {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    text-align: left;
+}
+
+.info h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.info ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.info li {
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+.info li::before {
+    content: "✓ ";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
