@@ -11,11 +11,18 @@
 </head>
 <body>
     <div class="container">
-        <h1><?php echo $data['title']; ?></h1>
-        <p><?php echo $data['description']; ?></p>
-        
-        <div class="info">
-            <h3>MVC Structure Created:</h3>
+        <section class="hero">
+            <h1><?php echo $data['title']; ?></h1>
+            <p class="lead"><?php echo $data['description']; ?></p>
+
+            <div class="actions">
+                <a class="btn btn-primary" href="#">Get Started</a>
+                <a class="btn btn-outline" href="#">Learn More</a>
+            </div>
+        </section>
+
+        <section class="info" aria-labelledby="mvc-heading">
+            <h3 id="mvc-heading">MVC Structure Created:</h3>
             <ul>
                 <li>Controllers: Handle application logic</li>
                 <li>Models: Manage data and database operations</li>
@@ -23,7 +30,7 @@
                 <li>Core: App routing and base classes</li>
                 <li>Config: Application configuration</li>
             </ul>
-        </div>
+        </section>
     </div>
 </body>
 </html>

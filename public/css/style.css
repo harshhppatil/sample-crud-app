@@ -1,61 +1,132 @@
 /* ==========================================
-    NEW STYLES
-    ========================================== */
+   GitHub Dark Theme - Site Styles
+   Base palette inspired by GitHub Dark: #0d1117 background
+   ========================================== */
+
+:root {
+     --bg: #0d1117; /* page background */
+     --surface: rgba(255,255,255,0.03); /* subtle card */
+     --muted: #8b949e; /* secondary text */
+     --text: #c9d1d9; /* primary text */
+     --accent: #238636; /* accent (success/brand) */
+     --radius: 12px;
+}
+
+/* Reset / layout */
+* { box-sizing: border-box; }
+html,body { height: 100%; }
 body {
-     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-     color: #fff;
+     font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial;
+     background: var(--bg);
+     color: var(--text);
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     min-height: 100vh;
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+     padding: 3rem 1rem;
 }
 
 .container {
-     background: rgba(255, 255, 255, 0.1);
+     width: 100%;
+     max-width: 960px;
+     background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+     border: 1px solid rgba(255,255,255,0.04);
      padding: 2rem;
-     border-radius: 20px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-     max-width: 700px;
-     text-align: center;
-     backdrop-filter: blur(10px);
+     border-radius: var(--radius);
+     box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+     text-align: left;
+     backdrop-filter: blur(6px);
+}
+
+.hero {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     margin-bottom: 1.5rem;
 }
 
 h1 {
-     color: #fff;
-     margin-bottom: 1.5rem;
-     font-size: 3rem;
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     color: var(--text);
+     margin: 0;
+     font-size: 2.25rem;
+     line-height: 1.05;
 }
 
-p {
-     color: #e0e0e0;
-     font-size: 1.5rem;
-     margin-bottom: 2.5rem;
-     line-height: 1.8;
+p.lead {
+     color: var(--muted);
+     font-size: 1.05rem;
+     margin: 0;
+}
+
+.actions {
+     margin-top: 1rem;
+     display: flex;
+     gap: 0.75rem;
+     flex-wrap: wrap;
+}
+
+.btn {
+     display: inline-block;
+     padding: 0.6rem 0.95rem;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 0.95rem;
+     border: 1px solid transparent;
+     cursor: pointer;
+}
+
+.btn-primary {
+     background: linear-gradient(180deg, #2ea44f, #238636);
+     color: #0b1a0b;
+     border-color: rgba(0,0,0,0.2);
+}
+
+.btn-outline {
+     background: transparent;
+     color: var(--text);
+     border: 1px solid rgba(255,255,255,0.06);
 }
 
 .info {
-     background: rgba(255, 255, 255, 0.2);
-     padding: 2rem;
-     border-radius: 15px;
-     border-left: 4px solid #ff7e5f;
-     text-align: left;
+     background: rgba(255,255,255,0.02);
+     padding: 1.25rem;
+     border-radius: 10px;
+     border-left: 4px solid var(--accent);
 }
 
 .info h3 {
-     color: #ff7e5f;
-     margin-bottom: 1rem;
+     color: var(--accent);
+     margin: 0 0 0.5rem 0;
+     font-size: 1.05rem;
 }
 
 .info ul {
      list-style: disc;
-     padding-left: 1.5rem;
+     padding-left: 1.2rem;
+     margin: 0;
 }
 
 .info li {
-     padding: 0.5rem 0;
-     color: #fff;
+     padding: 0.35rem 0;
+     color: var(--text);
 }
 
 .info li::before {
-     content: "✔ ";
-     color: #ff7e5f;
-     font-weight: bold;
-     margin-right: 0.5rem;
+     content: "\2713\0020"; /* check mark + space */
+     color: var(--accent);
+     font-weight: 700;
 }
+
+@media (max-width: 600px) {
+     .container { padding: 1rem; }
+     h1 { font-size: 1.6rem; }
+     .actions { justify-content: flex-start; }
+}
+
+/* small utility */
+.muted { color: var(--muted); }
+
+
