@@ -1,79 +1,61 @@
 /* ==========================================
-   RESET & BASE STYLES
-   ========================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+    NEW STYLES
+    ========================================== */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0d1117;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #333;
+     background: linear-gradient(135deg, #ff7e5f, #feb47b);
+     color: #fff;
 }
 
-/* ==========================================
-   LAYOUT
-   ========================================== */
 .container {
-    background: white;
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    text-align: center;
+     background: rgba(255, 255, 255, 0.1);
+     padding: 2rem;
+     border-radius: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+     max-width: 700px;
+     text-align: center;
+     backdrop-filter: blur(10px);
 }
 
-/* ==========================================
-   TYPOGRAPHY
-   ========================================== */
 h1 {
-    color: #667eea;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+     color: #fff;
+     margin-bottom: 1.5rem;
+     font-size: 3rem;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
-    color: #666;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+     color: #e0e0e0;
+     font-size: 1.5rem;
+     margin-bottom: 2.5rem;
+     line-height: 1.8;
 }
 
-/* ==========================================
-   INFO BOX
-   ========================================== */
 .info {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 4px solid #667eea;
-    text-align: left;
+     background: rgba(255, 255, 255, 0.2);
+     padding: 2rem;
+     border-radius: 15px;
+     border-left: 4px solid #ff7e5f;
+     text-align: left;
 }
 
 .info h3 {
-    color: #667eea;
-    margin-bottom: 0.5rem;
+     color: #ff7e5f;
+     margin-bottom: 1rem;
 }
 
 .info ul {
-    list-style: none;
-    padding-left: 1rem;
+     list-style: disc;
+     padding-left: 1.5rem;
 }
 
 .info li {
-    padding: 0.5rem 0;
-    color: #555;
+     padding: 0.5rem 0;
+     color: #fff;
 }
 
 .info li::before {
-    content: "✓ ";
-    color: #667eea;
-    font-weight: bold;
-    margin-right: 0.5rem;
+     content: "✔ ";
+     color: #ff7e5f;
+     font-weight: bold;
+     margin-right: 0.5rem;
 }
